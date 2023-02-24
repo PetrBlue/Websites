@@ -1,0 +1,20 @@
+html - jazyk/překlad
+br - odřádkování
+h1-h6 - napis
+head - hlava / metadata
+p - paragraf
+body - tělo / kód
+main - Hlavní okno
+input - <input type="checkbox" (button,radio,text,password) 
+id="jeden element" 
+# - id
+. - class
+class="více textů"
+ol - seznam - číslovaná data
+                     - nečíslovaná data
+li
+a href - odkaz ->   <a href="url">   <a href="#id">
+label - input, ale jen button
+form - formulář
+button - button, ale button
+img - obrázek

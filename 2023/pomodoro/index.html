@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20:00 | Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="blues-logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-img"></div>
+    <div class="background"></div>
+    <div class="level">
+        <img src="./level.png"></img>
+    </div>
+    <div class="container">
+        <div class="text" id="text">pomodoro</div>
+        <div class="points" id="points"></div>
+        <div class="timer" id="timer">20:00</div>
+        <button class="pause" id="pause" onclick="PreUpdate()">start</button>
+        <button class="settings" onclick="PauseTimer()"><img id="settings" src="settings.png"></img></button>
+    </div>
+    <div class="settings-menu" id="settings-menu">
+        <div class="settings-container">
+            <p class="text-bfr-input">Pomodoro:</p>
+            <input type="number" id="pomodoro-pomodoro" placeholder="Time in minutes" required>
+            <p class="text-bfr-input">Break:</p>
+            <input type="number" id="pomodoro-break" placeholder="Time in minutes" required>
+            <button onclick="Save()">Save!</button>
+        </div>
+        <button class="exit-btn" id="exit-btn"><img class="x" src="./x.png"></button>
+    </div>
+</body>
+</html>

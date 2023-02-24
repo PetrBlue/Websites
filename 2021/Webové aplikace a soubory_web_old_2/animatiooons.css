@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.idek{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: black;
+    animation: animacectverec 5s infinite;
+    position: absolute;
+  }
+  .idek:hover{}
+@keyframes animacectverec {
+    0%{background-color: blue;
+    left: 0px;
+    top: 0px;}
+    25%{background-color: green;
+    left: 0px;
+    top: 900px;}
+    50%{background-color: yellow;
+    left: 900px;
+    top: 900px;}
+    75%{background-color: coral;
+    left: 900px;
+    top: 0px;}
+    100%{background-color: red;
+    left: 0px;
+    top: 0px;}    
+    }
+.ideek{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: black;
+    animation: animacectverec2 5s infinite;
+    position: absolute;
+}
+@keyframes animacectverec2{
+    0%{background-color: blue;
+    left: 0px;
+    top: 0px;}
+    25%{background-color: green;
+    left: 900px;
+    top: 0px;}
+    50%{background-color: yellow;
+    left: 900px;
+    top: 900px;}
+    75%{background-color: coral;
+    left: 0px;
+    top: 900px;}
+    100%{background-color: red;
+    left: 0px;
+    top: 0px;}    
+    }
+.ideeek{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: black;
+        animation: animacectverec3 5s infinite;
+        position: absolute;
+    }
+@keyframes animacectverec3 {
+    0%{background-color: blue;
+    right: 0px;
+    top: 0px;}
+    25%{background-color: green;
+    right : 0px;
+    top: 900px;}
+    50%{background-color: yellow;
+    right: 900px;
+    top: 900px;}
+    75%{background-color: coral;
+    right: 900px;
+    top: 0px;}
+    100%{background-color: red;
+    right: 0px;
+    top: 0px;}    
+    }
+.ideeeek{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: black;
+        animation: animacectverec4 5s infinite;
+        position: absolute;
+    }
+@keyframes animacectverec4 {
+    0%{background-color: blue;
+    right: 0px;
+    top: 0px;}
+    25%{background-color: green;
+    right: 900px;
+    top: 0px;}
+    50%{background-color: yellow;
+    right: 900px;
+    top: 900px;}
+    75%{background-color: coral;
+    right: 0px;
+    top: 900px;}
+    100%{background-color: red;
+    right: 0px;
+    top: 0px;}    
+    }

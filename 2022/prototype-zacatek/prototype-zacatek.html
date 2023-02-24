@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypy</title>
+    <style></style>
+</head>
+<body>
+    
+    <script>
+        function nazvi(jmeno, prijmeni){
+            const celeJmeno = {}
+            celeJmeno.jmeno = jmeno
+            celeJmeno.prijmeni = prijmeni
+            celeJmeno.prejmenuj = function() {
+                const {jmeno, prijmeni} = this;
+                console.log("ted jsi pepicek novacek")
+                return {
+                    jmeno, prijmeni
+                }
+            }
+        }
+        const lol = nazvi("pepa", "novak")
+        /*let a = 5
+        let b = 6
+        let c = "zabiju se"
+        let d = {}
+        let heyo = "heyo"
+        a.prototype.zabitSe = function() {
+            console.log(this + " se zabilo lol")
+};
+    d.play = function () {
+      console.log(c + " snad.")
+    }
+    String.prototype.odpoved = function () {
+        console.log("Ahoooooj!")
+    }*/
+    </script>
+</body>
+</html>

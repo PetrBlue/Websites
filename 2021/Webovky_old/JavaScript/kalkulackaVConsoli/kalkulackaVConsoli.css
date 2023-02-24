@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.prvniDropdown2, .druhyDropdown2, .tretiDropdown2, .rovno, .vysledek{
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    background-color: cyan;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10%;
+    color: black;
+    margin-left: 1rem;
+}
+.prvniDropdown, .druhyDropdown, .tretiDropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: cyan;
+    z-index: 1;
+}
+ul li{
+    border: solid black;
+    text-align: center;
+    list-style-type: none;
+}
+ul li:hover{
+    background-color: gray;
+    color: cyan;
+}
+.button{
+    background-color: beige;
+    padding: 5%;
+    font-size: 1.5rem;
+    position: relative;
+    top: 20vh;
+    right: 35vw;
+    transform: translatex(-50%);
+    margin-top: 5%;
+}
+.prvniDropdown2:hover .prvniDropdown, .druhyDropdown2:hover .druhyDropdown, .tretiDropdown2:hover .tretiDropdown{
+    display:block;
+}

@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.tabulka{
+    height: 50vh;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    margin-top: 10rem;
+}
+.stat-vitality, .stat-strength, .stat-dexterity{
+    height: 100%;
+    width: 100%;
+    background-color: #064789;
+    border: 1px solid black;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 200px;
+}
+.stat-vitality-value, .stat-strength-value, .stat-dexterity-value{
+    height: 100%;
+    width: 100%;
+    background-color: #BB0A21;
+    border: 1px solid black;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 200px;
+}
+.stat-vitality-button-plus, .stat-vitality-button-minus, .stat-strength-button-plus, .stat-strength-button-minus, .stat-dexterity-button-plus, .stat-dexterity-button-minus{
+    height: 50%;
+    width: 50%;
+    background-color: #81C3D7;
+    border: 1px solid black;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    font-size: 4rem;
+    opacity: 0.75;
+}.stat-vitality-button-plus:hover, .stat-vitality-button-minus:hover, .stat-strength-button-plus:hover, .stat-strength-button-minus:hover, .stat-dexterity-button-plus:hover, .stat-dexterity-button-minus:hover{
+    cursor: pointer;
+    opacity: 1;
+}

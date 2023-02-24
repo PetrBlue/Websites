@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 130vh;
+    width: 97vw;
+    background: linear-gradient(white, black);
+    margin: 0;
+    position: relative;
+
+}
+.grid-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    width: 90vw;
+    height: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+ .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    height: 90%;
+    min-width: 150px;
+    max-width: 300px;
+    backface-visibility: hidden;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+    transition: all 0.5 ease-in-out;
+}
+.h1, .h4, .h7{
+    margin-left: 0;
+}
+.h3, .h6, .h9{
+    margin-right: 0;
+}
+.f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8, .f9{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: solid black 10px;
+    background: black;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    transform-style:preserve-3d;
+}
+.f2, .f5, .f8{
+    transform-origin: 32.5% 0%;
+}
+.f3, .f6, .f9{
+    transform-origin: 15.5% 0%;
+}
+.grid-content, .grid-content2, .grid-content3, .grid-content4, .grid-content5, .grid-content6, .grid-content7, .grid-content8, .grid-content9{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.grid-content-back, .grid-content-back1, .grid-content-back2, .grid-content-back3, .grid-content-back4, .grid-content-back5, .grid-content-back6, .grid-content-back7, .grid-content-back8, .grid-content-back9{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgb(26, 25, 25);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    color: transparent;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+.grid-content:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content2:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content3:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content4:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content5:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content6:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content7:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content8:hover .popis{
+    display: block;
+    opacity: 1;
+}
+.grid-content9:hover .popis{
+    display: block;
+    opacity: 1;
+}
+
+.obraz{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    backface-visibility: hidden;
+    z-index: 0;
+}
+.popis{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+.odkaz{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    margin-top: 20px;
+    width: 70px;
+    background-color: red;
+    color: white;
+    z-index: 3;
+}
+.zpet{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    font-size: 2rem;
+    color: red;
+    z-index: 3;
+}
+.zpet:hover{
+    color: gray;
+    box-shadow: 0 0 1.5em black;
+    text-shadow: 0 0 0 0.3em black;
+    background-color: rgb(184, 184, 184);
+}
+.format{
+    font-size: 1.5rem;
+    padding: 1rem 5rem 0 5rem;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+h3, h1{
+    text-decoration: underline;
+}

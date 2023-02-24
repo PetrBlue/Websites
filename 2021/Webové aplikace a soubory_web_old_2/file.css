@@ -1,0 +1,13 @@
+td {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+.red{background-color: red;}
+.blue{background-color:blue}
+.green{background-color:green}
+.yellow{background-color: yellow}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}

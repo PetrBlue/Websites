@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulčka v consoli</title>
+    <link rel="stylesheet" href="kalkulackaVConsoli.css">
+    <script src="kalkulackaVConsoli.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="prvniDropdown2">číslice
+            <div class="prvniDropdown">
+                <ul onclick="prvniCislo(1)"><li>1</li></ul>
+                <ul onclick="prvniCislo(2)"><li>2</li></ul>
+                <ul onclick="prvniCislo(3)"><li>3</li></ul>
+                <ul onclick="prvniCislo(4)"><li>4</li></ul>
+                <ul onclick="prvniCislo(5)"><li>5</li></ul>
+                <ul onclick="prvniCislo(6)"><li>6</li></ul>
+                <ul onclick="prvniCislo(7)"><li>7</li></ul>
+                <ul onclick="prvniCislo(8)"><li>8</li></ul>
+                <ul onclick="prvniCislo(9)"><li>9</li></ul>
+            </div>
+        </div>
+        <div class="druhyDropdown2">znamínko
+            <div class="druhyDropdown">
+                <ul onclick="znamenko('+')"><li>+</li></ul>
+                <ul onclick="znamenko('-')"><li>-</li></ul>
+                <ul onclick="znamenko('*')"><li>*</li></ul>
+                <ul onclick="znamenko('/')"><li>/</li></ul>
+            </div>
+        </div>
+        <div class="tretiDropdown2">číslice
+            <div class="tretiDropdown">
+                <ul onclick="druheCislo(1)"><li>1</li></ul>
+                <ul onclick="druheCislo(2)"><li>2</li></ul>
+                <ul onclick="druheCislo(3)"><li>3</li></ul>
+                <ul onclick="druheCislo(4)"><li>4</li></ul>
+                <ul onclick="druheCislo(5)"><li>5</li></ul>
+                <ul onclick="druheCislo(6)"><li>6</li></ul>
+                <ul onclick="druheCislo(7)"><li>7</li></ul>
+                <ul onclick="druheCislo(8)"><li>8</li></ul>
+                <ul onclick="druheCislo(9)"><li>9</li></ul>
+            </div>
+        </div>
+        <div class="rovno">=</div>
+        <div class="vysledek">
+            výsledek
+        </div>
+        <button class="button" type="submit" onclick="vypocet()">vypočítat</button>
+        
+    </div>
+</body>
+</html>

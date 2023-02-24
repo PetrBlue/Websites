@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miluji tě láska <3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .velkyText{
+            font-size: 1.5rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color:rgb(255, 255, 255);
+            text-align: center;
+        }
+        .srdicko {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        margin-top: 10px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 1;
+        }
+        .srdicko::before, .srdicko::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 52px;
+        height: 80px;
+        border-radius: 50px 50px 0 0;
+        background: red;
+        }
+        .srdicko::before {
+        left: 50px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        }
+        .srdicko::after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+        }
+        .temp{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="temp"></div>
+    <div class="velkyText">Miluji tě láska!!<3</div>
+    
+    <script>       
+        function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+        }async function lol(){
+            console.log("<3")
+            let novyDiv =  document.createElement("div");
+            novyDiv.onclick = function zprava(){
+            console.log("zprava<3")
+            let xd = Math.floor(Math.random()*18+1);
+            switch(xd){
+                case 1:
+                    alert("Posílám pusinku<3");
+                    novyDiv.remove();
+                    break;
+                case 2:
+                    alert("Posílám objetí<3");
+                    novyDiv.remove();
+                    break;
+                case 3:
+                    alert(":]<333✨");
+                    novyDiv.remove();
+                    break;
+                case 4:
+                    alert("Jsem tu pro tebe<3");
+                    novyDiv.remove();
+                    break;
+                case 5:
+                    alert("Miluji tě láska<3");
+                    novyDiv.remove();
+                    break;
+                case 6:
+                    alert("Jsi cute<3");
+                    novyDiv.remove();
+                    break;
+                case 7:
+                    alert("Jsi nejlepší😩<3");
+                    novyDiv.remove();
+                    break;
+                case 8:
+                    alert("<3");
+                    novyDiv.remove();
+                    break;
+                case 9:
+                    alert("Jsi hezká<3");
+                    novyDiv.remove();
+                    break;
+                case 10:
+                    alert("<3✨");
+                    novyDiv.remove();
+                    break;
+                case 11:
+                    alert("Jsi šikulka<3");
+                    novyDiv.remove();
+                    break;
+                case 12:
+                    alert("😩<3");
+                    novyDiv.remove();
+                    break;
+                case 13:
+                    alert("Lilinko miluji tě<3");
+                    novyDiv.remove();
+                    break;
+                case 14:
+                    alert("Láska miluji tě<3");
+                    novyDiv.remove();
+                    break;
+                case 15:
+                    alert("Jsi chytrá a moudrá<3");
+                    novyDiv.remove();
+                    break;
+                case 16:
+                    alert("Máš hezkou osobnost<3");
+                    novyDiv.remove();
+                    break;
+                case 17:
+                    alert("Máš hezké vlasy<3");
+                    novyDiv.remove();
+                    break;
+                case 18:
+                    alert("Máš pěkný hlas<3");
+                    novyDiv.remove();
+                    break;
+                default:
+                    alert("Miluji tě láska<3");
+                    novyDiv.remove();
+                    break;
+            }
+        };
+            novyDiv.classList.add("srdicko")
+            novyDiv.style.top = Math.floor(Math.random() * 630) + "px";
+            novyDiv.style.left = Math.floor(Math.random() * 260) + "px";
+            document.querySelector(".temp").appendChild(novyDiv)
+            await sleep(1500);
+            lol();
+            }
+        lol();
+    </script>
+</body>
+</html> 

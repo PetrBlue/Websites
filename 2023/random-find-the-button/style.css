@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+button{
+    height: 50px;
+}
+.color{
+    background-color: red;
+    border: unset !important;
+    outline: unset !important;
+    border-radius: 5px;
+}

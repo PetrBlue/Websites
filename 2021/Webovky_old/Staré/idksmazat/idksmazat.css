@@ -1,0 +1,22 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(148, 148, 148);
+}
+.space-pic{
+    background-image: url('https://media.istockphoto.com/vectors/space-background-with-realistic-nebula-and-shining-stars-colorful-vector-id1173451503?k=20&m=1173451503&s=612x612&w=0&h=nyxt3C6OjEFcquvjLALrIz-67IEOEpfKNBvR8qi4sLA=');
+    opacity: 0.7;
+    width: 100%;
+    height: 99.62vh;
+    position: relative;
+    image-repeat
+}
+.contactus{
+    background-color: transparent;
+    margin: 5rem 0 0 3rem;
+    position: relative;
+}

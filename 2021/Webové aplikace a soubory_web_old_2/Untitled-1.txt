@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      td <
+          width: 40px;
+          weight: 40px;
+         >
+    </style>
+</head>
+<body>
+  <tr>
+    <td>
+    blue
+    </td>
+  </tr>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 20vh;
+    width: 100vw;
+    background-color: blue;
+}
+.navbar {
+    height: 80vh;
+    width: 20vw;
+    background-color: red;
+}
+.container {
+    position: absolute;
+    height: 60vh;
+    right: 30%;
+    top: 40%;
+    width: 30vw;
+    background-color: yellow;
+}

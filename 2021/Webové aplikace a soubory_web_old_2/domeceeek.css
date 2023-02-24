@@ -1,0 +1,14 @@
+
+.triangleee{
+    width: 10px;
+	height: 10px;
+	border-left: 25px solid blue;
+	border-right: 25px solid blue;
+	border-bottom: 50px solid #555;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: yellow;
+}

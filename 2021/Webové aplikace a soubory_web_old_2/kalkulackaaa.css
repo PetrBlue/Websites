@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(200, 200, 200);;
+}
+.kalkulacka{
+    min-width: 500px;
+    max-width: 750px;
+    min-height: 700px;
+    max-height: 1050px;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: calc(50% - 350px);
+    left: calc(50% - 250px);
+    outline: 5px solid rgb(0, 0, 0);
+}
+.kalkulacka:hover{ 
+background-color: white;
+}
+.vysledek{
+    background-color: transparent;
+    height: 10%;
+    width: 80%;
+    border-radius: 20px;
+    outline: 2px solid black;
+    position: absolute;
+    top: 7.5%;
+    left: 10%;
+}
+.vysledek::after{
+    content:'0';
+    font-size: 4rem;
+    position: absolute;
+    left: 90%;
+}
+.buttoncislo{
+    border-radius: 5px;
+    background-color: transparent;
+    outline: 1px solid black;
+    height: 10%;
+    width: 15%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 2rem;
+}
+.buttoncislo:hover{
+    background-color: rgb(200, 200, 200);
+}

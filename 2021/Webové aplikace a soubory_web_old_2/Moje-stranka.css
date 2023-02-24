@@ -1,0 +1,64 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 20vh;
+    width: 100vw;
+    background-color: blue;
+    text-align: center;
+    font-size: 10rem;
+    font-family: cursive;
+}
+.navbar {
+    height: 5vh;
+    width: 100vw;
+    background-color: red;
+}
+.navbar ul {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color:  lime;
+}
+.navbar li {
+    display: inline-block;
+    height: 100%;
+    width: 24.89%;
+    border: 1px solid black;
+    float: left;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.wrapper {
+    height: 70vh;
+    width: 100vw;
+    background-color: green;
+}
+.container {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    left: 10vw;
+    top: 5vh;
+    background-color: yellow;
+}
+.img {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 0;
+    float: left;
+    background-color: white;
+}
+.text {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    padding: 0%;
+    color: white;
+}

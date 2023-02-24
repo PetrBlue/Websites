@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 1800px;
+    height: 900px;
+    background-color: rgb(0, 234, 255);
+}
+.logo1{
+    background-color: orangered;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 675px;
+    top: 225px;
+    animation: logo1 3.5s;
+}
+.logo2{
+    background-color: greenyellow;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 900px;
+    top: 225px;
+    animation: logo2 3.5s;
+}
+.logo3{
+    background-color: rgb(5, 151, 236);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 1045px;
+    top: 450px;
+    animation: logo3 3.5s;
+}
+.logo4{
+    background-color: rgb(252, 255, 56);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 900px;
+    bottom: 320px;
+    animation: logo4 3.5s;
+}
+@keyframes logo1 {
+    0%{left: 675px; background-color: orangered}
+    50%{left: 0px; background-color: transparent;}
+    100%{left: 675px; background-color: orangered}
+}
+@keyframes logo2 {
+    0%{top: 225px; background-color: greenyellow}
+    50%{top: 0px; background-color: transparent}
+    100%{top: 225px; background-color: greenyellow}
+}
+@keyframes logo3 {
+    0%{right: 1045px; background-color: rgb(5, 151, 236)}
+    50%{right: 0px; background-color: transparent}
+    100%{right: 1045px; background-color: rgb(5, 151, 236)}
+}
+@keyframes logo4 {
+    0%{bottom: 320px; background-color: rgb(252, 255, 56)}
+    50%{bottom: 0px; background-color: transparent}
+    100%{bottom: 320px; background-color: rgb(252, 255, 56)}
+}
+.buttonload{
+    height: 10px;
+    width: 10px;
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+}

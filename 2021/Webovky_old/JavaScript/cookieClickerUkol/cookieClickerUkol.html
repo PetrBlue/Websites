@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Adventure</title>
+    <link rel="stylesheet" href="cookieClickerUkol.css">
+</head>
+<body>
+    <div class="game">
+        <div class="tabulka">
+            <div class="coins">Coins:</div>
+            <div class="coins-shower">0</div>
+            <div class="cps">Current CPS:</div>
+            <div class="cps-shower">0</div>
+            <img src="cookieClickerUkol.png" class="xp" onclick="xpPlus()"></img>
+        </div>
+    
+        <div class="upgrade-section">
+            <div>CPS</div>
+            <div>Cost</div>
+            <div>Count</div>
+            <div class="upgrade-one">Vozík +1cps</div>
+            <button class="upgrade-one-cost" onclick="multiplierOneFunction()">5</button>
+            <div class="upgrade-one-count">0</div>
+            <div class="upgrade-two">Market +5cps</div>
+            <button class="upgrade-two-cost" onclick="multiplierTwoFunction()">25</button>
+            <div class="upgrade-two-count">0</div>
+            <div class="upgrade-three">Coming Soon</div>
+            <button class="upgrade-three-cost" onclick="multiplierThreeFunction()">x</button>
+            <div class="upgrade-three-count">x</div>
+        </div>
+    </div>
+
+    <script src="cookieClickerUkol.js"></script>
+</body>
+</html>

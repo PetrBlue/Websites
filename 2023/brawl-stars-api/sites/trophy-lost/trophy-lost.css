@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.cdnfonts.com/css/nougat');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../../images/general/blueskull.png);
+    background-size: cover;
+}
+.container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    margin: 1rem;
+    gap: 0.55rem;
+}
+.brawler-data{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.5rem;
+    border: solid black 5px;
+    background-color: transparent;
+    border-radius: 2px;
+    color: rgb(250,250,250);
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Nougat', sans-serif;
+}
+.brawler-data > :nth-child(2){
+    margin: auto 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.brawler-data > :nth-child(3){
+    margin: auto 0.5rem auto 0;
+}
+.profile{
+    display: flex;
+    font-family: 'Nougat', sans-serif;
+    font-size: 1.5rem;
+    height: 90px;
+    border: solid black 5px;
+    background-color: black;
+    border-radius: 2px;
+    gap: 0.5rem;
+}
+.profile-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    color: white;
+    position: relative;
+}
+.profile img{
+    border-right: solid black 5px;
+}
+.stats{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    font-family: 'Nougat', sans-serif;
+    height: 90px;
+    border: solid black 5px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    place-content: center;
+    place-items: center;
+    border-radius: 2px;
+    gap: 0.5rem;
+}
+@media only screen and (max-width: 3300px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+    }
+}
+@media only screen and (max-width: 3000px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(9, auto);
+    }
+}
+@media only screen and (max-width: 2700px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+    }
+}
+@media only screen and (max-width: 2400px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+    }
+}
+@media only screen and (max-width: 2100px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+    }
+}
+@media only screen and (max-width: 1800px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media only screen and (max-width: 900px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .brawler-data{
+        gap: 0;
+    }
+}

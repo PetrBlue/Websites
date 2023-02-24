@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    background-color: rgb(33, 35, 37);
+}
+strong{
+    background-color: transparent;
+}
+.gmail{
+font-size: 25px;
+position: absolute;
+color: white;
+top: 25px;
+right: 350px;
+}
+.obrázky{
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    top: 25px;
+    right: 250px;
+}
+.obalctverec{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 87.5px;
+    top: 12.5px;
+    background-color: transparent;
+}
+.bilyctverec{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    position: absolute;
+}
+.profil{
+    background-color: darkblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 12.5px;
+    top: 12.5px;
+}
+.profilp{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    left: 16px;
+    top: 5px;
+}
+.googlelogo{
+color: white;
+font-size: 150px;
+position: absolute;
+top: 150px;
+left: 675px;
+}
+.fontfontfont{
+    height: 50px;
+    width: 600px;
+    border-radius: 50px 50px;
+    border: 2px solid white;
+    position: absolute;
+    top: 350px;
+    left: 587.5px;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+.hledatgooglem{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(43, 43, 56);
+    position: absolute;
+    top: 425px;
+    left: 727.5px;
+    color: white;
+    border-radius: 15px;
+}
+.hledatgooglem2{
+    width: 150px;
+    position: absolute;
+    top: 440px;
+    left: 727.5px;
+    color: white;
+    text-align: center;
+}
+.zkusitstesti{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(43, 43, 56);
+    position: absolute;
+    top: 425px;
+    left: 897.5px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+.zkusitstesti2{
+    width: 150px;
+    position: absolute;
+    top: 440px;
+    left: 897.5px;
+    color: white;
+    text-align: center;
+}
+.language{
+    width: 250px;
+color: white;
+position: absolute;
+top: 500px;
+left: 40%;
+
+}
+.language2{
+    width: 250px;
+color: white;
+position: absolute;
+top: 500px;
+left: 48.5%;
+    color: rgb(0, 0, 255);
+}
+.cernypruh{
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    font-size: 10rem;
+}
+.napiscesko{
+    font-size: 2rem;
+    color: rgb(200, 200, 200);
+    position: absolute;
+    left: 1%;
+    top: 15%;
+}
+.napis1{
+    width: auto;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    position: absolute;
+    left: 1%;
+    top: 25%;
+}
+.adblockkolecko{
+    height: 4%;
+    width: 2%;
+    background-color: transparent;
+    border: 5px solid blue;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.pulkakolecka{
+    width: 40%;
+    height: 15%;
+    background-color: blue;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border: 10px solid blue;
+    border-bottom: 0;
+    position: absolute;
+    }
+.adblockobdelnik{
+    height: 75%;
+    width: 25%;
+    background-color: white;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+.switch {   
+    position: relative;
+    top: 20%;
+    left: 80%;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+  }
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    background-color: black;
+  }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: .25s;
+    transition: .25s;
+  }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    top: 4px;
+    background-color: white;
+    -webkit-transition: .25s;
+    transition: .25s;
+  }
+input:checked + .slider {
+    background-color: white;
+  }
+input:focus + .slider {
+    box-shadow: 0 0 1px #ffffff;
+  }
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+    background-color: white;
+}
+.blok{
+    position: absolute;
+    height: 10%;
+    width: 90%;
+    left: 3.75%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    border-top: transparent;
+}
+.carka{
+    height: 75%;
+    width: 25%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    border-radius: 3px;
+}
+.textvbloku{
+    font-size: 1.5rem;
+    position: absolute;
+    width: auto;
+    top: 15%;
+    left: 17.5%;
+    color: rgb(0, 0, 0);
+}
+.textvblokumini{
+    font-size: 1rem;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 17.5%;
+    color: gray;
+}

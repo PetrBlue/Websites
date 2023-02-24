@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.pridej-ctverec{
+    height: 12.5vh;
+    width: 12.5vw;
+    background-color: aqua;
+    position: relative;
+}
+.pridej-kruh{
+    height: 12.5vh;
+    width: 12.5vw;
+    background-color: aqua;
+    position: relative;
+    left: 12.5vw;
+    top: -12.5vh;
+}
+.pridej-ctverec:hover, .pridej-kruh:hover, .clear:hover{
+    cursor: pointer;
+}
+.input-velikost{
+    height: 12.5vh;
+    width: 12.5vh;
+    background-color: aqua;
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+    top: -15vh;
+}
+.color{
+    height: 12.5vh;
+    width: 6.125vw;
+    background-color: aqua;
+    position: relative;
+    top: -12.15vh;
+}
+.clear{
+    height: 25vh;
+    width: 25vw;
+    background-color: aqua;
+    position: relative;
+    top: 2vh;
+    left: -25.5vh;
+}
+.vysledek{
+    height: auto;
+    width: 50%;
+    background-color: aqua;
+    position: relative;
+    padding: 1rem;
+    position: relative;
+    top: -50vh;
+    left: 80vh;
+}
+.temp{
+    height: 0px;
+    width: 0px;
+    position: relative;
+    background-color: black;
+}
+.zabalit{
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 10vw;
+    background-color: aquamarine;
+}

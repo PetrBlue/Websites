@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.pozadi{
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    background-size: 100%;
+    background-image: url(https://imgproxy.natucate.com/PAd5WVIh-tjEKQM4Z6tm6W1J4Yc2JIYWrKEroD1c7mM/rs:fill/g:ce/w:3840/h:2160/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlYXJ0ZW4vNmMwODZlYmEtNzk3Yi00ZDVjLTk2YTItODhhNGM4OWUyODdlLzM3NjYwMTQ2NjMtMTU2NzQzMzYxMi8xMl9kYW5pZWxfY2FuX2JjLTIwNy5qcGc);
+}
+.nadpis{
+    position: absolute;
+    left: 650px;
+    top: 150px;
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10rem;
+    text-shadow: 10px 5px white;
+}
+.pozadinadpisu{
+   position: absolute;
+   left: 630px;
+   top: 150px;  
+   height: 200px;
+   width: 510px;
+   background-color: rgb(75, 240, 255);
+}
+.menu{
+   position: absolute;
+   left: 110px;
+   top: 650px;  
+   color: Black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 5rem;
+   text-shadow: 5px 2.5px white;
+}
+.menu2{
+    position: absolute;
+    left: 510px;
+    top: 650px;  
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    text-shadow: 10px 5px white;
+ }
+ .menu3{
+    position: absolute;
+    left: 1110px;
+    top: 650px;  
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    text-shadow: 5px 2.5px white;
+ }
+ .menu4{
+    position: absolute;
+    left: 1600px;
+    top: 650px;  
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    text-shadow: 5px 2.5px white;
+ }
+.pozadimenu{
+    position: absolute;
+    left: 100px;
+    top: 650px;  
+    height: 100px;
+    width: 210px;
+    background-color: rgb(75, 240, 255);
+ }
+ .pozadimenu2{
+    position: absolute;
+    left: 500px;
+    top: 650px;  
+    height: 100px;
+    width: 275px;
+    background-color: rgb(75, 240, 255);
+ }
+ .pozadimenu3{
+    position: absolute;
+    left: 1100px;
+    top: 650px;  
+    height: 100px;
+    width: 275px;
+    background-color: rgb(75, 240, 255);
+ }
+ .pozadimenu4{
+    position: absolute;
+    left: 1600px;
+    top: 650px;  
+    height: 100px;
+    width: 275px;
+    background-color: rgb(75, 240, 255);
+ }
+#menu{
+    scroll-behavior: smooth;
+    position: absolute;
+    left: 595px;
+    top: 1300px;  
+    height: 125px;
+    width: 700px;
+    background-color: rgb(75, 240, 255);
+}
+.register{
+    position: absolute;
+    left: 600px;
+    top: 1300px; 
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6rem;
+    text-shadow: 10px 5px white;
+}
+.form{
+    color: Black;
+    text-shadow: 1px 1px white;
+    position: absolute;
+    left: 600px;
+    top: 1500px; 
+}
+.formpozadi{
+        position: absolute;
+        left: 595px;
+        top: 1500px;  
+        height: 175px;
+        width: 700px;
+        background-color: rgb(75, 240, 255);
+}

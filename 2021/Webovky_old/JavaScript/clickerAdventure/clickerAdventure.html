@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Adventure</title>
+    <link rel="stylesheet" href="clickerAdventure.css">
+</head>
+<body>
+    <div class="game">
+        <div class="tabulka">
+            <div class="coins">Coins:</div>
+            <div class="coins-shower">0</div>
+            <div class="cpc">Current CPC:</div>
+            <div class="cpc-shower">1</div>
+            <div class="level">Level:</div>
+            <div class="level-shower">1</div>
+            <div class="clicker">0</div>
+            <div class="slash">/</div>
+            <div class="xp-required">20</div>
+            <button class="xp" onclick="xpPlus()">Gain XP</button>
+        </div>
+    
+        <div class="upgrade-section">
+            <div>CPC</div>
+            <div>Cost</div>
+            <div>Count</div>
+            <div class="upgrade-one">+1</div>
+            <button class="upgrade-one-cost" onclick="multiplierOneFunction()">100</button>
+            <div class="upgrade-one-count">0</div>
+            <div class="upgrade-two">+10</div>
+            <button class="upgrade-two-cost" onclick="multiplierTwoFunction()">1000</button>
+            <div class="upgrade-two-count">0</div>
+            <div class="upgrade-three">+100</div>
+            <button class="upgrade-three-cost" onclick="multiplierThreeFunction()">10000</button>
+            <div class="upgrade-three-count">0</div>
+        </div>
+    </div>
+
+    <script src="clickerAdventure.js"></script>
+</body>
+</html>

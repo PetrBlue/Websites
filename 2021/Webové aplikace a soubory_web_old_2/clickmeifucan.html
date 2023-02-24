@@ -1,0 +1,31 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8" /> 
+<title>Title</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head> 
+<body> 
+<h4>Example auto-moving html element</h4> 
+<p>Try to click on the following button.</p> 
+ 
+<button id='btn_test'>Catch Me</button> 
+<script>
+//sets a random absolute position to a html element; receives the html element 
+function moveElmRand(elm){ 
+ elm.style.position ='absolute'; 
+ elm.style.top = Math.floor(Math.random()*90+5)+'%'; 
+ elm.style.left = Math.floor(Math.random()*90+5)+'%'; 
+} 
+ 
+//get the #btn_test 
+var btn_test = document.querySelector('#btn_test'); 
+ 
+//register to call moveElmRand() on mouseenter event to #btn_test 
+btn_test.addEventListener('mouseenter', function(e){ moveElmRand(e.target);}); 
+ 
+//register click to #btn_test 
+btn_test.addEventListener('click', function(e){ alert('You are Good.');});
+</script>
+</body> 
+</html>

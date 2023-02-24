@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+.score{
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    font-size: 4rem;
+}
+.start-btn{
+    padding: 1rem;
+}
+.novy-div{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}

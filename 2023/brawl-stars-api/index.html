@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blues bs stats</title>
+    <script src="index.js" defer></script>
+    <link rel="shortcut icon" href="./images/general/blues-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <label>Rank viewer:</label>
+            <input type="text" placeholder="Your tag" id="tag-1" required>
+            <button onclick="UrlToRankViewer()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Brawler trophies:</label>
+            <input type="text" placeholder="Your tag" id="tag-2" required><input type="text" placeholder="Brawlers Trophies" id="desired-trophies" required>
+            <button onclick="UrlToBrawlerTrophies()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Desired trophies:</label>
+            <input type="text" placeholder="Your tag" id="tag-3" required><input type="text" placeholder="Desired Trophies" id="desired-total-trophies" required>
+            <button onclick="UrlToDesiredTrophies()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Experience bar:</label>
+            <input type="text" placeholder="Your tag" id="tag-4" required>
+            <button onclick="UrlToExperienceBar()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Trophy viewer:</label>
+            <input type="text" placeholder="Your tag" id="tag-5" required>
+            <button onclick="UrlToTrophyViewer()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Trophies per minute:</label>
+            <input type="number" placeholder="Winrate (%)" id="winrate" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+            <input type="number" placeholder="Trophies for a win" id="tpw" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+            <input type="number" placeholder="Trophies for a loss" id="tpl" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+            <button onclick="UrlToTrophiesPerMinute()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Brawler stats:</label>
+            <input type="text" placeholder="Your tag" id="tag-7" required>
+            <button onclick="UrlToBrawlerStats()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Current rank viewer:</label>
+            <input type="text" placeholder="Your tag" id="tag-8" required>
+            <button onclick="UrlToCurrentRankViewer()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Star points viewer:</label>
+            <input type="text" placeholder="Your tag" id="tag-9" required>
+            <button onclick="UrlToStarPointsViewer()" class="my-btn">View!</button>
+        </div>
+        <br>
+        <div class="form-container">
+            <label>Lost trophies:</label>
+            <input type="text" placeholder="Your tag" id="tag-10" required>
+            <button onclick="UrlToLostTrophies()" class="my-btn">View!</button>
+        </div>
+    </div>
+    <div class="help-icon">
+        <a href="./sites/help-page/help-page.html">
+            <img src="./images/general/help-icon.png" width='64' height='64'>
+        </a>
+</div>
+</body>
+</html>

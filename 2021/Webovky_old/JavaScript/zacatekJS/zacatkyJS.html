@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Začátek JS</title>
+    <link rel="stylesheet" href="zacatekJS.css">
+</head>
+<body>    
+    <form action="#" method="get">
+        <p>Jmeno</p>
+        <input type="text" id="jmeno" name="jmeno">
+        <p>Prijmeni</p>
+        <input type="text" name="#">
+        <p>Trida</p>
+        <input type="text" name="#">
+        <p>Heslo</p>
+        <input type="password" name="#">
+        <input type="button" value="Odeslat">
+    </form>
+
+
+
+
+    <div class="main-block">
+      <h1>Registrace</h1>
+      <form action="#" method="get">
+        <hr>
+        <div class="account-type">
+          <input type="radio" value="none" id="radioOne" name="account" checked/>
+          <label for="radioOne" class="radio">Osobní</label>
+          <input type="radio" value="none" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Pracovní</label>
+        </div>
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="name" id="name" placeholder="Email" required/>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Jméno" required/>
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="name" id="name" placeholder="Heslo" required/>
+        <hr>
+        <div class="gender">
+          <input type="radio" value="none" id="male" name="gender" checked/>
+          <label for="male" class="radio">Muž</label>
+          <input type="radio" value="none" id="female" name="gender" />
+          <label for="female" class="radio">Žena</label>
+        </div>
+        <hr>
+        <div class="btn-block">
+          <p>Registrací souhlasíte se sebraním vaší duše.</p>
+          <button type="submit" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Odeslat</button>
+        </div>
+      </form>
+    </div>
+    <script src="zacatekJS.js"></script>
+</body>
+</html>
