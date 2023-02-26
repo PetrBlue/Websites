@@ -1,0 +1,49 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  .toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+  }
+  .toolbar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .editor {
+    flex: 1;
+    display: flex;
+  }
+  .editor textarea {
+    width: 50%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: monospace;
+    padding: 10px;
+  }
+  .preview {
+    width: 50%;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: auto;
+    padding: 10px;
+  }

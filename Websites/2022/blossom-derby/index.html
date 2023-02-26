@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Derby</title>
+    <link rel="shortcut icon" href="blossom-derby-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="p">Players for derby:</p>
+        <input type="number" id="userN" onclick="changedNumber()" min="1" max="30" />
+        <div class="tt-container">
+            <p class="p">Tenth Task: </p>
+            <input type="checkbox" id="tenthTask" />
+        </div>
+        <button onclick="calculate()" id="btn">Calculate!</button>
+        <div class="p" id="points">Max points: </div>
+    </div>
+    <a href="https://www.instagram.com/petr._.blue/" class="info">This site was made by blue.</a>
+</body>
+
+</html>

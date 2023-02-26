@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    /*black*/
+    --header-color: rgb(0, 0, 0);
+    /*idk*/
+    --header-text-color: rgb(190, 37, 255);
+    /*black*/
+    --background-color: rgb(40, 40, 40);
+    /*darker white*/
+    --animation-color: rgb(240, 87, 255);
+    /*black*/
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 4rem;
+    background-color: var(--header-color);
+    display: flex;
+}
+
+.header-link {
+    margin: 0.5rem 0 0 1rem;
+    font-size: 2rem;
+}
+@keyframes nadpis {
+    from {
+        color: var(--header-text-color);
+    }
+
+    to {
+        color: var(--animation-color);
+    }
+}
+@keyframes rainbow-text {
+    from {color: red;}
+    8% {color: orange;}
+    16% {color: yellow;}
+    24% {color: green;}
+    32% {color: blue;}
+    40% {color: indigo;}
+    48% {color: violet;}
+    56% {color: indigo;}
+    64% {color: blue;}
+    72% {color: green;}
+    80% {color: yellow;}
+    90% {color: orange;}
+    to {color: red;}
+}*/
+a {
+    color: var(--header-text-color);
+}
+.home {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin: 1rem auto 1rem auto;
+    display: block;
+    text-decoration: underline;
+    font-weight: 800;
+    animation: nadpis 2s alternate infinite;
+}
+.social-container {
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.social-link {
+    font-size: 3rem;
+    animation: nadpis 2s alternate infinite;
+}
+/*.social-link::before{
+    content: '• ';
+    display: inline-block;
+    text-decoration: none;
+}*/
+.social-link-img {
+    margin-left: 0.45rem;
+    margin-top: 0.45rem;
+    margin-right: 0.45rem;
+    display: inline-block;
+    position: relative;
+    top: 7.5px;
+}
+.game-container {
+    width: 100vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto;
+}
+.game-link {
+    font-size: 3rem;
+    animation: nadpis 2s alternate infinite;
+}
+.game-link-img {
+    margin-left: 0.45rem;
+    margin-top: 0.45rem;
+    margin-right: 0.45rem;
+    display: inline-block;
+    position: relative;
+    top: 7.5px;
+}
+.version-number {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+.visits-number {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+.visits-number2 {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 4rem;
+}
+.info-container {
+    width: 95vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+.info-text::before {
+    content: '• ';
+    display: inline-block;
+    text-decoration: none;
+}
+.info-text {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    inline-size: 94vw;
+    overflow-wrap: break-word;
+    color: var(--text-color);
+}
+.darkmode-toggle {
+    width: 15%;
+    height: 80%;
+    position: relative;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    display: block;
+    background-color: #242424;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px, -5px, 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.darkmode-toggle:after {
+    content: "";
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.input-for-dm {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.input-for-dm:checked+.darkmode-toggle {
+    background: white;
+}
+.input-for-dm:checked+label:after {
+    left: 95%;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+}
+label:active:after {
+    width: 50%;
+}
+svg.moon,
+svg.sun {
+    position: absolute;
+    width: 35px;
+    top: 15%;
+    z-index: 2;
+}
+svg.moon {
+    left: 5%;
+    fill: black;
+    transition: 0.3s;
+}
+svg.sun {
+    right: 5%;
+    fill: yellow;
+    transition: 0.3s;
+}
+.aboutme-text {
+    margin: 0 2rem 0 2rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+@media only screen and (max-width: 1200px) {
+    .social-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+
+    svg.sun,
+    svg.moon {
+        width: 33%;
+    }
+
+    .aboutme-text {
+        font-size: 1.5rem;
+    }
+
+    .info-text {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header-link {
+        margin: 0.5rem 0 0 1rem;
+        font-size: 1rem;
+    }
+
+    .header {
+        width: 100vw;
+        height: 2rem;
+        background-color: var(--header-color);
+        display: flex;
+    }
+
+    svg.sun,
+    svg.moon {
+        height: 75%;
+    }
+
+    svg.moon {
+        left: 1%;
+    }
+
+    .social-container {
+        grid-template-columns: auto;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+        animation: nadpis 2s alternate infinite;
+    }
+
+    .game-link {
+        font-size: 1.5rem;
+        animation: nadpis 2s alternate infinite;
+    }
+
+    .aboutme-text {
+        font-size: 1rem;
+    }
+}
+
+
+.container{
+    margin: auto;
+}
+.socials{
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-color);
+    font-size: 10rem;
+}

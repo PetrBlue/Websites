@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+body{
+	background: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% );
+	padding: 0;
+	margin: 0;	
+}
+.my-btn {
+	box-shadow:inset 0px 0px 0px 0px #242424;
+	background:linear-gradient(to bottom, #2d1aad 5%, #441961 100%);
+	background-color:#2d1aad;
+	border-radius:42px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #030303;
+}
+.my-btn:hover {
+	background:linear-gradient(to bottom, #441961 5%, #2d1aad 100%);
+	background-color:#441961;
+}
+.my-btn:active {
+	position:relative;
+	top:1px;
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(1, auto);
+	width: 30vw;
+	margin: 2rem auto 2rem auto;
+}
+.form-container{
+	display: grid;
+	padding-bottom: 0.5rem;
+}
+.form-container p, .form-container input{
+	margin-bottom: 0.25rem;
+	padding: 0.5rem;
+}
+.form-container button{
+	padding: 1rem;
+}
+input{
+	border-radius: 50px;
+	background: transparent;
+	text-align: center;
+	appearance: textfield;
+}
+.help-icon{
+	position: fixed;
+	right: 5%;
+	bottom: 5px;
+}
+@media only screen and (max-width: 1000px) {
+	*{
+		box-sizing: border-box;
+		font-family: 'Source Code Pro', monospace;
+		font-weight: 500;
+		font-size: 1rem;
+		color: white;
+	}
+	.container{
+		width: 40vw;
+	}
+}
+@media only screen and (max-width: 750px) {
+	*{
+		box-sizing: border-box;
+		font-family: 'Source Code Pro', monospace;
+		font-weight: 500;
+		font-size: 1rem;
+		color: white;
+	}
+	.container{
+		width: 70vw;
+	}
+}
+@media only screen and (max-width: 500px) {
+	*{
+		box-sizing: border-box;
+		font-family: 'Source Code Pro', monospace;
+		font-weight: 500;
+		font-size: 1rem;
+		color: white;
+	}
+	.container{
+		width: 90vw;
+		margin: 1rem auto 0.5rem auto;
+	}
+}

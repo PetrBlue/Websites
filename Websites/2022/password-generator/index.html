@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <textarea rows="1" class="password"></textarea>
+    <input type="number" class="quantity" value="5" max="20" min="1">
+    <div class="choice">
+        <div class="name">Uppercase Letters</div>
+        <input name="btn" type="checkbox" class="user-check" id="upperCase"></input>
+    </div>
+    <div class="choice">
+        <div class="name">Lowercase Letters</div>
+        <input name="btn" type="checkbox" class="user-check" id="lowerCase"></input>
+    </div>
+    <div class="choice">
+        <div class="name">Numbers</div>
+    <input name="btn" type="checkbox" class="user-check" id="numbers"></input>
+    </div>
+    <div class="choice">
+        <div class="name">Special characters</div>
+        <input name="btn" type="checkbox" class="user-check" id="specialCharacters"></input>
+    </div>
+    <button class="create" onclick="generate()">Create!</button>
+    </div>
+</body>
+</html>

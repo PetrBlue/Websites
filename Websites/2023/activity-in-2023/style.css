@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.day {
+    font-size: 5rem;
+}
+
+.progress .border {
+    width: 75vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.border .background {
+    background-color: rgba(100, 100, 100, 1);
+    margin: 0.5rem;
+    width: 95%;
+    height: 95%;
+}
+
+.background .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.daily {
+    width: 75vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+}
+
+.daily * {
+    padding: 0.5rem;
+}
+
+.daily>* {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.daily p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0;
+}
+@media (max-width: 750px) {
+    .daily{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 450px) {
+    .daily{
+        font-size: 1rem;
+    }
+}

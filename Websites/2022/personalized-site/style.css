@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(50,50,50);
+}
+.button{
+    height: 40px;
+    width: 100px;
+    border-radius: 0px;
+    background-color: aliceblue;
+    color: rgb(50,50,50);
+}
+.paragraf{
+    text-align: center;
+}

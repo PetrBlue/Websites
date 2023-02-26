@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    cursor: none;
+}
+
+.black {
+    background-color: black;
+    cursor: none;
+}

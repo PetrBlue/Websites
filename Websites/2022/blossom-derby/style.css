@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    width: 200px;
+    margin: auto;
+    row-gap: 20px;
+    top: 20px;
+}
+
+.p {
+    color: white;
+    margin: auto;
+}
+
+#btn {
+    box-shadow: 0px 0px 50px 10px #800572;
+    background: linear-gradient(to bottom, #000000 5%, #ff0000 100%);
+    background-color: #000000;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 32px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ff0000;
+}
+
+#btn:hover {
+    background: linear-gradient(to bottom, #ff0000 5%, #000000 100%);
+    background-color: #ff0000;
+}
+
+#btn:active {
+    position: relative;
+    top: 1px;
+}
+
+#userN {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: hidden;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, .75);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .75);
+    text-align: center;
+}
+
+.userN:focus {
+    outline: none;
+}
+
+#userN::-webkit-outer-spin-button,
+#userN::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#userN {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.tt-container {
+    margin: auto;
+    display: flex;
+}
+
+.info {
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0.5rem;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.info:hover {
+    font-size: 1.25rem;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+    color: #ff0000;
+    text-decoration: underline;
+}
