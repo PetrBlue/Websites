@@ -1,0 +1,36 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(200,200,200);
+}
+.nadpis{
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    background-color: rgb(0, 132, 255);
+    font-size: 5em;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    line-height: 20vh;
+}
+.socials{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(0, 132, 255);
+    display: flex;
+    list-style-type: none;
+}
+.instagram{
+    display: block;
+    float: left;
+}
+.facebook{
+    display: block;
+    float: left;
+}

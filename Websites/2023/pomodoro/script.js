@@ -1,26 +1,27 @@
 var settings = document.getElementById("settings");
 var settingsMenu = document.getElementById("settings-menu");
 var exitMenu = document.getElementById("exit-btn");
-settings.addEventListener("click", function() {
-  settingsMenu.classList.remove("animate-out");
-  settings.classList.add("animate");
-  settingsMenu.style.zIndex = "5";
-  settingsMenu.classList.add("animate");
-  setTimeout(removeAnim, 1000);
+settings.addEventListener("click", function () {
+    settingsMenu.classList.remove("animate-out");
+    settings.classList.add("animate");
+    settingsMenu.style.zIndex = "5";
+    settingsMenu.classList.add("animate");
+    setTimeout(removeAnim, 1000);
 });
-function removeAnim(){
+function removeAnim() {
     settings.classList.remove("animate");
 }
-exitMenu.addEventListener("click", function(){
+exitMenu.addEventListener("click", function () {
     settingsMenu.classList.remove("animate");
     settingsMenu.classList.add("animate-out");
     setTimeout(removeAnim2, 1000);
 });
-function removeAnim2(){
+function removeAnim2() {
     settingsMenu.classList.remove("animate-out");
     settingsMenu.style.zIndex = "-5";
 }
 
+//todo
 let timer = document.getElementById('timer');
 let pomodoroMinutes = 20;
 let breakMinutes = 10;
@@ -33,45 +34,45 @@ let secondsTotal = 0; //add to this by ls, on load load levels and add value to 
 let firstMilestone = 60;
 let addedMilestone = 20;
 let milestone = 60;
-function PreUpdate(){
-    if(isRunning){
+function PreUpdate() {
+    if (isRunning) {
         isRunning = false;
         document.getElementById('pause').textContent = "start";
-    }else{
+    } else {
         isRunning = true;
         document.getElementById('pause').textContent = "pause";
         Update();
     }
 }
-function Update(){
-    if(!isRunning){
+function Update() {
+    if (!isRunning) {
         return;
     }
-    if(sec == 0){
+    if (sec == 0) {
         sec = 59;
-        if(min != 0){
+        if (min != 0) {
             min--;
         }
-    }else{
+    } else {
         sec--;
     }
     secondsTotal++;
-    if(secondsTotal == milestone){
+    if (secondsTotal == milestone) {
         level++;
         milestone += addedMilestone;
-        
+
     }
     UpdateUi();
     if (min != 0 || sec != 0) {
         setTimeout(Update, 1000);
-    }else {
-        if(isBreak){
+    } else {
+        if (isBreak) {
             min = pomodoroMinutes;
             isBreak = false;
             UpdateUi();
             document.getElementById('text').textContent = "pomodoro";
             setTimeout(Update, 1000);
-        }else{
+        } else {
             min = breakMinutes;
             isBreak = true;
             UpdateUi();
@@ -80,8 +81,8 @@ function Update(){
             setTimeout(Update, 1000);
         }
     }
-} 
-function Save(){
+}
+function Save() {
     var pomMin = document.getElementById('pomodoro-pomodoro').value;
     var breakMin = document.getElementById('pomodoro-break').value;
     pomodoroMinutes = pomMin;
@@ -92,27 +93,27 @@ function Save(){
     UpdateUi();
     document.getElementById('pause').textContent = "start";
 }
-function UpdateUi(){
+function UpdateUi() {
     let height = secondsTotal / milestone
-    if(min < 10){
-        if(sec < 10){
+    if (min < 10) {
+        if (sec < 10) {
             timer.textContent = "0" + min + ":0" + sec;
             document.title = "0" + min + ":0" + sec + " | Pomodoro";
-        }else{
+        } else {
             timer.textContent = "0" + min + ":" + sec;
             document.title = "0" + min + ":" + sec + " | Pomodoro";
         }
-    }else{
-        if(sec < 10){
+    } else {
+        if (sec < 10) {
             timer.textContent = min + ":0" + sec;
             document.title = min + ":0" + sec + " | Pomodoro";
-        }else{
+        } else {
             timer.textContent = min + ":" + sec;
             document.title = min + ":" + sec + " | Pomodoro";
         }
     }
 }
-function PauseTimer(){
+function PauseTimer() {
     isRunning = false;
     document.getElementById('pause').textContent = "start";
 }

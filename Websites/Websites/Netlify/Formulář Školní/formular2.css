@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-color: rgb(200, 200, 200);
+}
+.tabulka{
+ height: 50%;
+ width: 20%;
+ background-color: royalblue;
+ position: absolute;
+ left: 40%;
+ top: 25%;
+}
+.informace{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        height: 65%;
+        border-radius: 20px;
+        border: 2px solid black;
+}
+.input{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+}
